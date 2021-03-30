@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/globalsign/mgo"
-	"github.com/globalsign/mgo/bson"
+	"gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2/bson"
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
 )

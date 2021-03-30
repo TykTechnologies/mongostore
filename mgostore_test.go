@@ -12,8 +12,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/globalsign/mgo"
 	"github.com/gorilla/sessions"
+	"gopkg.in/mgo.v2"
 )
 
 type FlashMessage struct {
@@ -42,7 +42,7 @@ func TestMongoStore(t *testing.T) {
 	}
 	defer dbsess.Close()
 
-	store := NewMongoStore(dbsess.DB("test").C("test_session"), 3600, true,
+	store := NewMongoStore(dbsess.DB("tyk_portal").C("test_session"), 3600, true,
 		[]byte("secret-key"))
 
 	req, _ = http.NewRequest("GET", "http://localhost:8080/", nil)
@@ -157,7 +157,7 @@ func TestMongoStore(t *testing.T) {
 	}
 
 	// Delete session.
-	session.Options.MaxAge = -1
+	// session.Options.MaxAge = -1
 	// Save.
 	if err = sessions.Save(req, rsp); err != nil {
 		t.Fatalf("Error saving session: %v", err)
