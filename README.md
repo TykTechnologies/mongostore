@@ -3,7 +3,7 @@ mongostore
 
 [Gorilla's Session](http://www.gorillatoolkit.org/pkg/sessions) store implementation with MongoDB using the legacy (unmantained) [mgo](https://github.com/go-mgo/mgo) library
 
-This repository is meant to give some backwards compatibility to some projects that can't upgrade to other MOngoDB driver at the moment. If you need/want to use the more up to date [mgo](https://labix.org/v2/mgo) library check the [original](https://github.com/kidstuff/mongostore) library from where this one derives.
+This repository is meant to give some backwards compatibility to some projects that can't upgrade to other MongoDB driver at the moment. If you need/want to use the more up to date [mgo](https://labix.org/v2/mgo) library check the [original](https://github.com/kidstuff/mongostore) library from where this one derives.
 
 ## Requirements
 
