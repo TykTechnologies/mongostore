@@ -9,10 +9,10 @@ import (
 	"net/http"
 	"time"
 
-	"gopkg.in/mgo.v2"
-	"gopkg.in/mgo.v2/bson"
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
+	"gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2/bson"
 )
 
 var (
