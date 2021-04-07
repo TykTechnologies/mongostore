@@ -7,15 +7,15 @@ This repository is meant to give some backwards compatibility to some projects t
 
 ## Requirements
 
-Depends on the unmantained [mgo](https://github.com/go-mgo/mgo) library.
+Depends on the unmantained [mgo](https://github.com/TykTechnologies/mongostore) library.
 
 ## Installation
 
-    go get github.com/padiazg/mongostore
+    go get github.com/TykTechnologies/mongostore
 
 ## Documentation
 
-Available on [godoc.org](http://www.godoc.org/github.com/padiazg/mongostore).
+Available on [godoc.org](http://www.godoc.org/github.com/TykTechnologies/mongostore).
 
 ### Example
 ```go
